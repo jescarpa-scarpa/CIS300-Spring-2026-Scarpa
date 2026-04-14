@@ -14,7 +14,7 @@
   <header>
     <div class="top-header">
       <div class="logo-box">
-       <img src="logo.png" alt="Accurate Electrical and Mechanical Contractors logo" class="logo-image">
+        <img src="logo.png" alt="Accurate Electrical and Mechanical Contractors logo" class="logo-image">
       </div>
 
       <div class="company-box">
@@ -25,10 +25,10 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -41,9 +41,11 @@
     <section class="description">
       <h2>Dependable Service You Can Trust</h2>
       <p>
-        Accurate Electrical and Mechanical Contractors, Inc. provides reliable electrical and
-        mechanical services for residential and commercial clients. Our goal is to deliver
-        quality workmanship, strong customer service, and dependable results on every project.
+        Accurate Electrical and Mechanical Contractors, Inc. is a long-standing New Jersey company
+        built on reliable service, quality workmanship, and strong customer relationships. With
+        decades of hands-on experience, our team handles a wide range of electrical and mechanical
+        work while staying focused on organization, safety, and dependable results. Every project is
+        approached with the same goal: do the job the right way and leave customers confident in the work.
       </p>
     </section>
 
@@ -67,32 +69,32 @@
       </div>
 
       <div class="estimate-box">
-  <h2>Request an Estimate</h2>
-  <p>Fill out the form below and our team will follow up with more information.</p>
+        <h2>Request an Estimate</h2>
+        <p>Fill out the form below and our team will follow up with more information.</p>
 
-  <form id="estimate-form">
-    <label for="full-name">Full Name</label>
-    <input type="text" id="full-name" required>
+        <form id="estimate-form" action="#" method="post">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" required>
 
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" required>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
 
-    <label for="email">Email Address</label>
-    <input type="email" id="email" required>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
 
-    <label for="service">Type of Service Needed</label>
-    <input type="text" id="service" required>
+          <label for="service">Type of Service Needed</label>
+          <input type="text" id="service" name="service" required>
 
-    <label for="message">Project Details</label>
-    <textarea id="message" rows="5"></textarea>
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" rows="5"></textarea>
 
-    <input type="submit" value="Submit Request">
-  </form>
+          <input type="submit" value="Submit Request">
+        </form>
 
-  <div id="confirmation-message" class="hidden-message">
-    Request submitted successfully. Our team will follow up with you soon.
-  </div>
-</div>
+        <div id="confirmation-message" class="hidden-message">
+          Request submitted successfully. Our team will follow up with you soon.
+        </div>
+      </div>
     </section>
   </main>
 
@@ -101,13 +103,12 @@
   </footer>
 
   <script>
-  document.getElementById("estimate-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    document.getElementById("estimate-form").style.display = "none";
-    document.getElementById("confirmation-message").style.display = "block";
-  });
-</script>
+    document.getElementById("estimate-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      document.getElementById("estimate-form").style.display = "none";
+      document.getElementById("confirmation-message").style.display = "block";
+    });
+  </script>
 
 </body>
 </html>
